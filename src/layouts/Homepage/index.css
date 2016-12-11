@@ -1,0 +1,122 @@
+section {
+  /*display: flex;
+  justify-content: center;*/
+  padding: 40px 0;
+}
+
+.photosSection, .blogSection, .footerSection {
+  background-color: #efefef;
+}
+
+.wrapper {
+  /*display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: var(--maxWidth);
+  padding: 1rem 0.75rem;*/
+  margin: auto;
+  max-width: var(--maxWidth);
+}
+
+.hero {
+  /* fallback, mainly visible when hero image is loading */
+  background-color: var(--colorSecondary);
+  /* fallback when there is no hero image */
+  /*background:
+    radial-gradient(
+      ellipse at 50% 50%,
+      color(var(--colorSecondary) l(+ 10%)) 15%,
+      var(--colorSecondary) 70%
+    );*/
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    /*padding: 20vh 0;*/
+    height: 100vh;
+    text-align: center;
+}
+
+
+.heading {
+  color: var(--colorNeutralLight);
+  text-shadow:
+    0 0 10px var(--colorPrimaryDark),
+    0 0 6px var(--colorNeutralDark),
+    0 0 2px var(--colorNeutralDark)
+  ;
+  letter-spacing: 1px;
+}
+
+.cta {
+  margin-top: 2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent {
+  margin: 1rem 0;
+}
+
+.body {
+  & a {
+    color: var(--colorPrimary);
+    transition: all 0.2s;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      opacity: 1;
+      color: color(var(--colorPrimary) l(- 5%));
+      border-bottom-color: var(--colorPrimary);
+    }
+  }
+
+  /* handy for content */
+  & img {
+    max-width: 100%;
+  }
+}
+
+
+.aboutContainer {
+
+}
+
+section h2 {
+  text-align: center;
+}
+.photoGrid {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  height: auto;
+  /*width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;*/
+
+ & img {
+   display: flex;
+   flex: 1;
+   height: auto;
+   /*height: auto;
+   width: 25%;
+   margin: 0;
+   padding: 0;*/
+ }
+}
+@media (min-width: 900px) {
+  .photoGrid img {
+    /*flex-basis: 25%;*/
+    width: 25%;
+  }
+}
+.buttonLink {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}

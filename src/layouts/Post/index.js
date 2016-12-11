@@ -17,11 +17,15 @@ const Post = (props) => {
           <header className={ styles.header }>
             {
               pageDate &&
-              <time key={ pageDate.toISOString() }>
-                { pageDate.toDateString() }
-              </time>
+              <div className={ styles.metaContainer }>
+                <span>Posted on </span>
+                <time key={ pageDate.toISOString() }>
+                  { pageDate.toDateString() }
+                </time>
+              </div>
             }
           </header>
+          <hr></hr>
         </div>
       }
     >

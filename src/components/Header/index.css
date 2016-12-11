@@ -3,22 +3,26 @@
 }
 
 .header {
-  position: absolute;
-  /* stretch */
-  left: 0;
-  right: 0;
+  display: flex;
+  position: fixed;
 
   color: var(--colorNeutralLight);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  width: 100%;
+  line-height: 4rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  text-transform: uppercase;
 }
-
+.logo {
+  display: flex;
+}
 .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /*max-width: calc(var(--maxWidth) + (var(--nav-item-padding) * 2));*/
-  margin: 0 auto;
   padding: 0;
-  line-height: 3rem;
 }
 
 .navPart1,

@@ -34,8 +34,9 @@
 
 .heading {
   color: var(--colorNeutralLight);
+  font-size: 2.5rem;
   text-shadow:
-    0 0 10px var(--colorPrimaryDark),
+    0 0 10px var(--colorNeutralDark),
     0 0 6px var(--colorNeutralDark),
     0 0 2px var(--colorNeutralDark)
   ;

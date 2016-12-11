@@ -9,24 +9,18 @@ import PageHero from "../../components/PageHero"
 
 import styles from "./index.css"
 
-const Page = ( props,
+const Page = ({
+    isLoading,
+    __filename,
+    __url,
+    head,
+    body,
+    header,
+    footer,
+    children,
+  },
+  { metadata: { pkg } } ) => {
 
-  {
-    metadata: { pkg },
-  }
-
-) => {
-
-    const   {
-        isLoading,
-        __filename,
-        __url,
-        head,
-        body,
-        header,
-        footer,
-        children,
-      } = props
   warning(
     typeof head.title === "string",
     `Your page '${ __filename }' needs a title`

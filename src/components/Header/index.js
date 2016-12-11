@@ -9,19 +9,45 @@ import styles from "./index.css"
 
 const Header = (props, { metadata: { pkg } }) => (
   <header className={ styles.header }>
+    <div className={ styles.logo }>
+      <Link
+        className={ styles.link }
+        to={ "/" }
+      >
+        { "Acro With Brian" }
+      </Link>
+    </div>
     <nav className={ styles.nav }>
       <div className={ styles.navPart1 }>
-        <Link
-          className={ styles.link }
-          to={ "/" }
-        >
-          { "Home" }
-        </Link>
         <Link
           className={ styles.link }
           to={ "/about" }
         >
           { "About" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to={ "/photos" }
+        >
+          { "Photos" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to={ "/blog" }
+        >
+          { "Blog" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to={ "/events" }
+        >
+          { "Events" }
+        </Link>
+        <Link
+          className={ styles.link }
+          to={ "/contact" }
+        >
+          { "Contact" }
         </Link>
       </div>
       <div className={ styles.navPart2 }>

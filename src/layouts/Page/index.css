@@ -1,3 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  max-width: var(--maxWidth);
+  padding: 1rem 0.75rem;
+}
+
 .page {
   display: flex;
   flex-direction: column;
