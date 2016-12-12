@@ -9,10 +9,29 @@
   color: var(--colorNeutralLight);
   border-bottom: 1px solid rgba(255,255,255,0.2);
   width: 100%;
-  line-height: 4rem;
+  line-height: 5rem;
   justify-content: space-between;
   padding: 0 2rem;
   text-transform: uppercase;
+
+
+z-index: 99999;
+background: rgba(0,0,0,0);
+-webkit-backface-visibility: hidden;
+-webkit-transform: translate3d(0, 0, 0);
+background-clip: padding-box;
+transition: background 0.3s ease, line-height 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+.scrolled {
+  background: #fff;
+  border-bottom-color: rgba(0,0,0,0);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  line-height: 4rem;
+}
+.scrolled a {
+    color: #000;
 }
 .logo {
   display: flex;
