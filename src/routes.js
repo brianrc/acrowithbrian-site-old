@@ -7,6 +7,7 @@ import Page from "./layouts/Page"
 import PageError from "./layouts/PageError"
 import Homepage from "./layouts/Homepage"
 import Blog from "./layouts/Blog"
+import Photos from "./layouts/Photos"
 import Post from "./layouts/Post"
 
 const PageContainer = (props) => (
@@ -17,6 +18,7 @@ const PageContainer = (props) => (
       PageError,
       Homepage,
       Blog,
+      Photos,
       Post,
     }}
   />

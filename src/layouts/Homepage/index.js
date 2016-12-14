@@ -6,6 +6,9 @@ import Button from "../../components/Button"
 import LatestPosts from "../../components/LatestPosts"
 import styles from "./index.css"
 
+import Gallery from 'react-grid-gallery'
+const IMAGES = require('../../../content/assets/home-gallery/images.js').IMAGES;
+
 const Homepage = (props, { metadata: { pkg } }) => {
   const { isLoading, __url, head, body, footer  } = props;
 
@@ -58,12 +61,13 @@ const Homepage = (props, { metadata: { pkg } }) => {
       </section>
       <section className={ styles.photosSection }>
         <h2>Photos</h2>
-          <div className={ styles.photoGrid }>
+          {/* <div className={ styles.photoGrid }>
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
-          </div>
+          </div> */}
+          <Gallery images={IMAGES} enableImageSelection={false} backdropClosesModal={true} />
           <Link to='photos' className={styles.buttonLink}>
             <Button>More Photos</Button>
           </Link>
