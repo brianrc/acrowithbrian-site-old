@@ -9,6 +9,7 @@ const PageError = ({ error, errorText }) => (
     head={{
       // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
       hero: "https://farm8.staticflickr.com/7559/16101654539_bee5151340_k.jpg",
+      metaTitle: "Page Not Found"
     }}
   >
     <div className={ styles.container }>

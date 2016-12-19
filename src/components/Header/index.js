@@ -22,7 +22,7 @@ class Header extends Component {
   }
 
   handleScroll(){
-    // only change scroll state if menu closed
+    // only handle scroll state if menu closed
     if (!this.state.sideNavOpen) {
       if( window.pageYOffset > 50 )
         this.setState({didScroll: true})

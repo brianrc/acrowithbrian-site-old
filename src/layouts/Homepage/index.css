@@ -89,6 +89,10 @@ section {
 section h2 {
   text-align: center;
 }
+.gallery { 
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
 .photoGrid {
   display: flex;
   flex: 1;

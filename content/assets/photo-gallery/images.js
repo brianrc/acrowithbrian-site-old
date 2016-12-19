@@ -1,49 +1,45 @@
 module.exports.IMAGES = [{
-      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
-      thumbnail: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 174,
-      caption: "After Rain (Jeshu John - designerspics.com)"
+      src: "../../assets/photo-gallery/DSC_0398.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_0398-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 338,
+      caption: "Brian Cruikshank and Lindsey Fong"
 },
 {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      caption: "Boats (Jeshu John - designerspics.com)"
-},
-
-{
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
+      src: "../../assets/photo-gallery/DSC_0436.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_0436-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 334,
 },
 {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      caption: "Boats (Jeshu John - designerspics.com)"
+      src: "../../assets/photo-gallery/DSC_0542.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_0542-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 383,
 },
 
 {
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
+      src: "../../assets/photo-gallery/DSC_0638.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_0638-500x.jpg",
+      thumbnailWidth: 357,
+      thumbnailHeight: 500
 },
 {
-      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-      thumbnail: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-      caption: "Boats (Jeshu John - designerspics.com)"
+      src: "../../assets/photo-gallery/DSC_3444.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_3444-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 500,
+},
+{
+      src: "../../assets/photo-gallery/DSC_3456.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_3456-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 350,
 },
 
 {
-      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-      thumbnail: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_n.jpg",
-      thumbnailWidth: 320,
-      thumbnailHeight: 212
+      src: "../../assets/photo-gallery/DSC_3541.jpg",
+      thumbnail: "../../assets/photo-gallery/thumbnails/DSC_3541-500x.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 371
 }]

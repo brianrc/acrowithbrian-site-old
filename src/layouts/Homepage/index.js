@@ -67,7 +67,11 @@ const Homepage = (props, { metadata: { pkg } }) => {
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
           </div> */}
-          <Gallery images={IMAGES} enableImageSelection={false} backdropClosesModal={true} />
+          <div className={ styles.gallery }>
+
+            <Gallery images={IMAGES} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} />
+
+          </div>
           <Link to='photos' className={styles.buttonLink}>
             <Button>More Photos</Button>
           </Link>
@@ -85,7 +89,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       </section>
 
       <section className={ styles.blogSection }>
-        <LatestPosts />
+        <LatestPosts/>
         <Link to='blog' className={styles.buttonLink}>
           <Button>More Posts</Button>
         </Link>

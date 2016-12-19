@@ -1,5 +1,6 @@
 ---
 title: Welcome
+metaTitle: Acro With Brian
 layout: Homepage
 hero: assets/DSC_1307.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/

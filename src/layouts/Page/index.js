@@ -46,7 +46,7 @@ const Page = ({
   return (
     <div className={ styles.page }>
       <Helmet
-        title={ metaTitle }
+        title={ metaTitle + ' - Acro with Brian' }
         meta={ meta }
       />
       {
