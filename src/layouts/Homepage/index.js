@@ -4,10 +4,11 @@ import { BodyContainer, joinUri, Link } from "phenomic"
 import Loading from "../../components/Loading"
 import Button from "../../components/Button"
 import LatestPosts from "../../components/LatestPosts"
+import LatestEvents from "../../components/LatestEvents"
 import styles from "./index.css"
 
 import Gallery from 'react-grid-gallery'
-const IMAGES = require('../../../content/assets/home-gallery/images.js').IMAGES;
+import images from '../../../content/assets/home-gallery/images.js'
 
 const Homepage = (props, { metadata: { pkg } }) => {
   const { isLoading, __url, head, body, footer  } = props;
@@ -69,7 +70,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
           </div> */}
           <div className={ styles.gallery }>
 
-            <Gallery images={IMAGES} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} />
+            <Gallery className={ styles.galleryZ}  images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} />
 
           </div>
           <Link to='photos' className={styles.buttonLink}>
@@ -82,6 +83,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
           <p>My name is Brian. I’m a certified Acro Revolution teacher based
              in Washington, D.C. I’ve been training and visiting cities around
               the U.S. for 5+ years and can’t get enough!</p>
+          <LatestEvents />
         </div>
         <Link to='events' className={styles.buttonLink}>
           <Button>More Events</Button>
@@ -89,6 +91,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       </section>
 
       <section className={ styles.blogSection }>
+        <h2>Blog</h2>
         <LatestPosts/>
         <Link to='blog' className={styles.buttonLink}>
           <Button>More Posts</Button>

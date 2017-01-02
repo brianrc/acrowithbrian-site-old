@@ -4,3 +4,5 @@ node_modules
 
 # phenomic build
 dist
+
+pigments-report.json

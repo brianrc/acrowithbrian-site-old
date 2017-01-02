@@ -4,7 +4,7 @@
   align-self: center;
   width: 100%;
   max-width: var(--maxWidth);
-  padding: 1rem 0.75rem;
+  padding: 1rem;
 }
 
 .hero {
@@ -22,27 +22,36 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 5rem 0;
-  padding: 20vh 0;
+  justify-content: center;
   text-align: center;
-  /*background: linear-gradient(
+  height: 520px;
+  padding-top: 82px;
+    /*background: linear-gradient(
     to bottom,
     var(--colorPrimaryDark),
     color(var(--colorPrimary) a(0.2))
   );*/
 }
-
 .heading {
   color: var(--colorNeutralLight);
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  line-height: 1.3;
   text-shadow:
     0 0 10px var(--colorNeutralDark),
     0 0 6px var(--colorNeutralDark),
     0 0 2px var(--colorNeutralDark)
   ;
   letter-spacing: 1px;
+  margin: 5px 0;
 }
-
-.cta {
-  margin-top: 2rem;
+.metaContainer {
+  color: var(--colorNeutralLight);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px var(--colorNeutralDark),
+    0 0 6px var(--colorNeutralDark),
+    0 0 2px var(--colorNeutralDark)
+  ;
 }

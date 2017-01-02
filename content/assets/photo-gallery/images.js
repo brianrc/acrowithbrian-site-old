@@ -1,4 +1,4 @@
-module.exports.IMAGES = [{
+module.exports = [{
       src: "../../assets/photo-gallery/DSC_0398.jpg",
       thumbnail: "../../assets/photo-gallery/thumbnails/DSC_0398-500x.jpg",
       thumbnailWidth: 500,

@@ -132,6 +132,8 @@
     "phenomic": "^0.19.4"
   },
   "dependencies": {
+    "moment": "^2.17.1",
+    "react-big-calendar": "^0.11.1",
     "react-grid-gallery": "^0.2.8"
   }
 }

@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 import styles from "./index.css"
 
 const PageHero = ( {head} ) => {
-
+const pageDate = head.date ? new Date(head.date) : null
 return (
 
     <div
@@ -14,6 +14,14 @@ return (
       <div className={ styles.header }>
         <div className={ styles.wrapper }>
           <h1 className={ styles.heading }>{ head.title }</h1>
+          {
+            pageDate &&
+            <div className={ styles.metaContainer }>
+              <time key={ pageDate.toISOString() }>
+                { pageDate.toLocaleDateString('en-US', {month: 'long', day: 'numeric', year: 'numeric'}) }
+              </time>
+            </div>
+          }
         </div>
       </div>
     </div>

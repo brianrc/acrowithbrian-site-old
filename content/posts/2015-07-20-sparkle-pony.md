@@ -1,7 +1,9 @@
 ---
 title: Sparkle Pony
+route: sparkle-pony
 date: 2015-07-20
 layout: Post
+author: Brian Cruikshank
 hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
 thumbnail: https://dummyimage.com/400x400/000/fff
 category: Washing Machines

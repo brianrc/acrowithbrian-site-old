@@ -89,9 +89,12 @@ section {
 section h2 {
   text-align: center;
 }
-.gallery { 
+.gallery {
   /*display: flex;*/
   /*justify-content: center;*/
+}
+.galleryZ {
+  background-color: 'red';
 }
 .photoGrid {
   display: flex;

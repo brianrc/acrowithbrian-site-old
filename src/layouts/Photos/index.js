@@ -4,7 +4,7 @@ import Page from "../Page"
 // import styles from "./index.css"
 
 import Gallery from 'react-grid-gallery'
-const IMAGES = require('../../../content/assets/photo-gallery/images.js').IMAGES;
+import images from '../../../content/assets/photo-gallery/images.js'
 
 const Photos = (props) => {
   return (
@@ -13,7 +13,7 @@ const Photos = (props) => {
         { ...props }
       >
       </Page>
-      <Gallery images={IMAGES} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} width={2048}/>
+      <Gallery images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} width={2048}/>
     </div>
   )
 }

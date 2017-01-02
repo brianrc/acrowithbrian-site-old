@@ -9,6 +9,8 @@ import Homepage from "./layouts/Homepage"
 import Blog from "./layouts/Blog"
 import Photos from "./layouts/Photos"
 import Post from "./layouts/Post"
+import Events from "./layouts/Events"
+import Event from "./layouts/Event"
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
@@ -18,8 +20,10 @@ const PageContainer = (props) => (
       PageError,
       Homepage,
       Blog,
-      Photos,
       Post,
+      Photos,
+      Events,
+      Event,
     }}
   />
 )

@@ -87,7 +87,7 @@ class Header extends Component {
             <li className={styles.navItem}>
             <Link
               className={ styles.link }
-              to={ "/about" }
+              to={ "/about/" }
             >
               { "About" }
             </Link>
@@ -95,7 +95,7 @@ class Header extends Component {
             <li className={styles.navItem}>
             <Link
               className={ styles.link }
-              to={ "/photos" }
+              to={ "/photos/" }
             >
               { "Photos" }
             </Link>
@@ -103,7 +103,7 @@ class Header extends Component {
             <li className={styles.navItem}>
             <Link
               className={ styles.link }
-              to={ "/blog" }
+              to={ "/blog/" }
             >
               { "Blog" }
             </Link>
@@ -111,7 +111,7 @@ class Header extends Component {
             <li className={styles.navItem}>
             <Link
               className={ styles.link }
-              to={ "/events" }
+              to={ "/events/" }
             >
               { "Events" }
             </Link>
@@ -119,7 +119,7 @@ class Header extends Component {
             <li className={styles.navItem}>
             <Link
               className={ styles.link }
-              to={ "/contact" }
+              to={ "/contact/" }
             >
               { "Contact" }
             </Link>

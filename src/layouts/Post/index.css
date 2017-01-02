@@ -1,6 +1,8 @@
 .header {
   display: flex;
-  justify-content: center;
-  opacity: 0.6;
+  justify-content: flex-start;;
   font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 10px;
 }

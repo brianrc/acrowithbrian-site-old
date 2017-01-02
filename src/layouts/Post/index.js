@@ -6,8 +6,8 @@ import Page from "../Page"
 import styles from "./index.css"
 
 const Post = (props) => {
-  // it's up to you to choose what to do with this layout ;)
-  const pageDate = props.head.date ? new Date(props.head.date) : null
+
+  const postAuthor = props.head.author;
 
   return (
     <Page
@@ -16,16 +16,16 @@ const Post = (props) => {
         <div>
           <header className={ styles.header }>
             {
-              pageDate &&
+              postAuthor &&
               <div className={ styles.metaContainer }>
-                <span>Posted on </span>
-                <time key={ pageDate.toISOString() }>
-                  { pageDate.toDateString() }
-                </time>
+                {
+                  'By ' + postAuthor
+                }
               </div>
             }
           </header>
-          <hr></hr>
+
+          <hr />
         </div>
       }
     >
