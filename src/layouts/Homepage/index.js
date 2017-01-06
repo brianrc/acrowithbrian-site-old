@@ -7,8 +7,8 @@ import LatestPosts from "../../components/LatestPosts"
 import LatestEvents from "../../components/LatestEvents"
 import styles from "./index.css"
 
-import Gallery from 'react-grid-gallery'
-import images from '../../../content/assets/home-gallery/images.js'
+// import Gallery from 'react-grid-gallery'
+// import images from '../../../content/assets/home-gallery/images.js'
 
 const Homepage = (props, { metadata: { pkg } }) => {
   const { isLoading, __url, head, body, footer  } = props;
@@ -39,7 +39,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       <section
         className={ styles.hero }
         style={ head.hero && {
-          background: `#111 url(${ head.hero }) 50% 50% / cover`,
+          background: `#111 url(${ head.hero }) 50% 30% / cover`,
         } }
       >
         <div className={ styles.wrapper }>
@@ -48,27 +48,45 @@ const Homepage = (props, { metadata: { pkg } }) => {
       </section>
       <section className={ styles.aboutSection }>
         <div className={ styles.wrapper }>
-          <div className={ styles.body }>
-            {
-              isLoading
-              ? <Loading />
-              : <div className= {styles.aboutContainer}>
-                  <h2>About</h2>
-                  <BodyContainer>{ body }</BodyContainer>
-                </div>
-            }
+          <div className={ styles.aboutImage }>
+            <img src="https://dummyimage.com/400x400/000/fff" />
           </div>
+          {
+            isLoading
+            ? <Loading />
+            : <div className={ styles.aboutTextContainer }>
+                <div className={ styles.body }>
+                  <h2>About</h2>
+                  <div className={ styles.aboutText }>
+                    <BodyContainer>{ body }</BodyContainer>
+                  </div>
+                </div>
+                <Link to='about' className={styles.buttonLink}>
+                  <Button>Learn More</Button>
+                </Link>
+              </div>
+          }
         </div>
       </section>
-      <section className={ styles.photosSection }>
-        <h2>Photos</h2>
+      <section className={ styles.photoHighlight }>
+        <div className={ styles.panelImage }
+          style={ head.photoHighlight && {
+            backgroundImage: `url(${ head.photoHighlight })`,
+          } }>
+          {/* <Link to='photos' className={styles.buttonLink}>
+            <Button>View Photos</Button>
+          </Link> */}
+        </div>
+      </section>
+      {/* <section className={ styles.photosSection }>
+        <h2 className={ styles.sectionHeading }>Photos</h2> */}
           {/* <div className={ styles.photoGrid }>
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
             <img src="https://dummyimage.com/400x400/000/fff" />
           </div> */}
-          <div className={ styles.gallery }>
+          {/* <div className={ styles.gallery }>
 
             <Gallery className={ styles.galleryZ}  images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} />
 
@@ -76,36 +94,42 @@ const Homepage = (props, { metadata: { pkg } }) => {
           <Link to='photos' className={styles.buttonLink}>
             <Button>More Photos</Button>
           </Link>
-      </section>
+      </section> */}
       <section className={ styles.eventsSection }>
         <div className={ styles.wrapper }>
-          <h2>Events</h2>
-          <p>My name is Brian. I’m a certified Acro Revolution teacher based
-             in Washington, D.C. I’ve been training and visiting cities around
-              the U.S. for 5+ years and can’t get enough!</p>
-          <LatestEvents />
+          <div className={ styles.body }>
+            <h2 className={ styles.sectionHeading }>Events</h2>
+            <div className={ styles.eventsContainer}>
+              <div className={ styles.eventsText }>
+                <p>I travel around quite a bit. You can find me at these upcoming events!</p>
+              </div>
+              <LatestEvents className={ styles.eventsList }/>
+            </div>
+          </div>
+          <Link to='events' className={styles.buttonLink}>
+            <Button>More Events</Button>
+          </Link>
         </div>
-        <Link to='events' className={styles.buttonLink}>
-          <Button>More Events</Button>
-        </Link>
       </section>
 
       <section className={ styles.blogSection }>
-        <h2>Blog</h2>
-        <LatestPosts/>
-        <Link to='blog' className={styles.buttonLink}>
-          <Button>More Posts</Button>
-        </Link>
+        <div className={ styles.wrapper }>
+          <h2 className={ styles.sectionHeading }>Blog</h2>
+          <LatestPosts/>
+          <Link to='blog' className={styles.buttonLink}>
+            <Button>More Posts</Button>
+          </Link>
+        </div>
       </section>
 
-      <section className={ styles.contactSection }>
+      {/* <section className={ styles.contactSection }>
         <div className={ styles.wrapper }>
-          <h2>Contact</h2>
+          <h2 className={ styles.sectionHeading }>Contact</h2>
           <Link to='contact' className={styles.buttonLink}>
             <Button>Contact me</Button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       <section className={ styles.footerSection }>
         { footer }

@@ -6,14 +6,18 @@ const Footer = () => (
   <footer className={ styles.footer }>
     { /* If you like Phenomic, this is a way to share the love ;) */ }
     <p>
+      { "Website by "}
+      <a
+        href="https://www.brianswebstudio.com/"
+        className={ styles.footerLink }>
+        { "Brian's Web Studio" }
+      </a>
+      { ". Made with " }
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
-        className={ styles.phenomicReference }
+        className={ styles.footerLink }
       >
-        { "Website generated with " }
-        <span className={ styles.phenomicReferenceName }>
-          {  `<${ process.env.PHENOMIC_NAME} />` }
-        </span>
+        { `<${ process.env.PHENOMIC_NAME} />` }
       </a>
     </p>
   </footer>

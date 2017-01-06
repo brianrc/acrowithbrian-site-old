@@ -4,29 +4,28 @@ import { Link } from "phenomic"
 
 import styles from "./index.css"
 
-const defaultNumberOfPosts = 3
 
 const LatestEvents = (props, { collection }) => {
   const latestEvents = enhanceCollection(collection, {
-    filter: { layout: "Event" },
+    filter: (prop) => prop.layout === "Event" && new Date(prop.date).getTime() > (Date.now() - 86400000),
     sort: "date",
-    reverse: true,
+    limit: 3,
   })
-  .slice(0, props.numberOfPosts || defaultNumberOfPosts)
+
 
   return (
     <div>
         {
         latestEvents.length
         ? (
-          <ul className={ styles.list }>
-            {
+          <ul className={ styles.list + " " + props.className }>
+          {
             latestEvents.map((event) => (
               <li key={ event.title }>
                 <Link to={ event.__url } className={ styles.title }>
                   { event.title }
                 </Link>
-                <p>{ event.start }</p>
+                <p>{ new Date(event.start).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}) }</p>
               </li>
             ))
           }
@@ -38,12 +37,12 @@ const LatestEvents = (props, { collection }) => {
   )
 }
 
-LatestEvents.propTypes = {
-  numberOfPosts: PropTypes.number,
-}
-
 LatestEvents.contextTypes = {
   collection: PropTypes.array.isRequired,
+}
+
+LatestEvents.propTypes = {
+  className: PropTypes.object,
 }
 
 export default LatestEvents

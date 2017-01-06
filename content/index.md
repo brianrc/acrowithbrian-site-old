@@ -1,8 +1,9 @@
 ---
-title: Welcome
+title: Hi, I'm Brian!
 metaTitle: Acro With Brian
 layout: Homepage
-hero: assets/DSC_1307.jpg
+hero: assets/DSC_5823.jpg
+photoHighlight: assets/DSC_0436.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
 #cta:
 #  label: About this theme
@@ -10,4 +11,4 @@ hero: assets/DSC_1307.jpg
 description: This is an og description
 ---
 
-My name is Brian and I’m a certified Acro Revolution teacher based in Washington, D.C. I have over 5 years of experience doing acro, traveling around the United States learning advanced techniques and developing new skills and flows. Acro is a passion of mine and a never ending gift of vitality and fun!
+I love acro. I am a certified Acro Revolution teacher based in the Washington, D.C. area. With over 5 years of experience, I've traveled around the country learning some of the most advanced techniques and developing new skills. Now I want to teach you!
