@@ -11,6 +11,7 @@ import Photos from "./layouts/Photos"
 import Post from "./layouts/Post"
 import Events from "./layouts/Events"
 import Event from "./layouts/Event"
+import Contact from "./layouts/Contact"
 
 const PageContainer = (props) => (
   <PhenomicPageContainer
@@ -24,6 +25,7 @@ const PageContainer = (props) => (
       Photos,
       Events,
       Event,
+      Contact,
     }}
   />
 )
