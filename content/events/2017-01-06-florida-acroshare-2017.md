@@ -3,8 +3,7 @@ title: Florida AcroShare 2017
 route: florida-acroShare-2017
 date: 2017-01-06
 layout: Event
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
-thumbnail: https://dummyimage.com/400x400/000/fff
+hero: ../assets/events/florida-acroshare-2017.jpg
 category: Festival
 start: January 6, 2017
 end: January 8, 2017

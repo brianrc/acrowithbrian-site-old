@@ -1,14 +1,31 @@
 .blogItem {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin-bottom: 2rem;
+  max-width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
 }
 
+@media (min-width: 768px) {
+  .blogItem {
+    max-width: 45vw;
+  }
+}
+@media (min-width: 1024px) {
+  .blogItem {
+    max-width: 30vw;
+  }
+}
+.blogItem img {
+  height: auto;
+  width: 100%;
+}
 .title {
   align-self: center;
-  font-size: 1.2rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .meta {

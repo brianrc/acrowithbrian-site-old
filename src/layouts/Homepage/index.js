@@ -49,7 +49,9 @@ const Homepage = (props, { metadata: { pkg } }) => {
       <section className={ styles.aboutSection }>
         <div className={ styles.wrapper }>
           <div className={ styles.aboutImage }>
-            <img src="https://dummyimage.com/400x400/000/fff" />
+            <img src={ head.aboutPhoto }
+              srcSet={ head.aboutPhoto + ' 640w, ' + head.aboutPhotoBig + ' 1080w'}
+              sizes={'(min-width: 768px) 50vw, 100vw'} />
           </div>
           {
             isLoading
@@ -73,9 +75,9 @@ const Homepage = (props, { metadata: { pkg } }) => {
           style={ head.photoHighlight && {
             backgroundImage: `url(${ head.photoHighlight })`,
           } }>
-          {/* <Link to='photos' className={styles.buttonLink}>
-            <Button>View Photos</Button>
-          </Link> */}
+          <Link to='photos' className={styles.buttonLink}>
+            <Button big light className={ styles.button }>View Photos</Button>
+          </Link>
         </div>
       </section>
       {/* <section className={ styles.photosSection }>

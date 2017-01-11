@@ -100,7 +100,7 @@
 .aboutImage {
   flex: 1;
   & img {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 }
@@ -179,11 +179,9 @@ section h2 {
   align-items: center;
   justify-content: center;
 }
-.photoHighlight .buttonLink {
-  display: block;
-  text-align: center;
-  background: #fff;
-  border: 0;
+
+.photoHighlight .button {
+  background-color: rgba(0,0, 0, 0.0);
 }
 
 .eventsContainer {

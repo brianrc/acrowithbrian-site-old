@@ -1,7 +1,7 @@
 ---
 title: Blog
 layout: Blog
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
+hero: ../assets/blog-1920x.jpg
 ---
 <!---
   Content here not used, see ``src/layouts/Blog``

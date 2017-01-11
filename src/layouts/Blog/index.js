@@ -13,7 +13,7 @@ const Blog = (props) => {
       { ...props }
     >
     </Page>
-    <LatestPosts />
+    <LatestPosts numberOfPosts="12" />
     </div>
   )
 }
