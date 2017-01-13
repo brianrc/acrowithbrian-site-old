@@ -557,3 +557,11 @@ button.rbc-input::-moz-focus-inner {
 .rbc-toolbar .rbc-toolbar-label {
   width: inherit;
 }
+
+/* bws - react-big-calendar.css custom */
+.rbc-event {
+  border-radius: 2px;
+}
+.rbc-event.teaching {
+  background-color: #008000;
+}

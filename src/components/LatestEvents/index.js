@@ -2,7 +2,7 @@ import React, { PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import { Link } from "phenomic"
 
-import styles from "./index.css"
+// import styles from "./index.css"
 
 
 const LatestEvents = (props, { collection }) => {
@@ -18,11 +18,11 @@ const LatestEvents = (props, { collection }) => {
         {
         latestEvents.length
         ? (
-          <ul className={ styles.list + " " + props.className }>
+          <ul className={ props.className }>
           {
             latestEvents.map((event) => (
               <li key={ event.title }>
-                <Link to={ event.__url } className={ styles.title }>
+                <Link to={ event.__url }>
                   { event.title }
                 </Link>
                 <p>{ new Date(event.start).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}) }</p>

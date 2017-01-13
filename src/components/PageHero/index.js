@@ -2,9 +2,9 @@ import React, { PropTypes } from "react"
 import styles from "./index.css"
 
 const PageHero = ( {head} ) => {
-const pageDate = head.date ? new Date(head.date) : null
-return (
+const pageDate = head.date ? new Date(head.date.replace(/-/g, '\/').replace(/T.+/, '')) : null
 
+return (
     <div
       className={ styles.hero }
       style={ head.hero && {

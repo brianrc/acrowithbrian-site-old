@@ -1,11 +1,11 @@
 ---
 title: Interfusion Festival 2017
-route: interfusion-festival-2017
+route: events/interfusion-festival-2017
 date: 2017-02-10
 layout: Event
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
-thumbnail: https://dummyimage.com/400x400/000/fff
+hero: ../../assets/events-1920x.jpg
 category: Workshop
+teaching: true
 start: February 10, 2017
 end: February 12, 2017
 allDay: true

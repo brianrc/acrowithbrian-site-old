@@ -1,11 +1,11 @@
 ---
 title: ALL the Washing Machines Part Deux
-route: all-the-washing-machines-part-deux
+route: events/all-the-washing-machines-part-deux
 date: 2016-12-18
 layout: Event
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
-thumbnail: https://dummyimage.com/400x400/000/fff
+hero: ../../assets/events-1920x.jpg
 category: Workshop
+teaching: true
 start: December 18, 2016 2:00 PM
 end: December 18, 2016 4:00 PM
 location: Dance Loft on 14

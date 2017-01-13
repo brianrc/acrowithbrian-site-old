@@ -1,10 +1,11 @@
 ---
 title: Florida AcroShare 2017
-route: florida-acroShare-2017
+route: events/florida-acroShare-2017
 date: 2017-01-06
 layout: Event
-hero: ../assets/events/florida-acroshare-2017.jpg
+hero: ../../assets/events/florida-acroshare-2017.jpg
 category: Festival
+teaching: false
 start: January 6, 2017
 end: January 8, 2017
 allDay: true

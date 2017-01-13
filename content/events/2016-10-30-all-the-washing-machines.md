@@ -1,11 +1,11 @@
 ---
 title: ALL the Washing Machines!
-route: all-the-washing-machines
+route: events/all-the-washing-machines
 date: 2016-10-30
 layout: Event
-hero: https://farm4.staticflickr.com/3949/15589950511_3675b15e59_k.jpg
-thumbnail: https://dummyimage.com/400x400/000/fff
+hero: ../../assets/events-1920x.jpg
 category: Workshop
+teaching: true
 start: October 30, 2016 14:00:00
 end: October 30, 2016 16:00:00
 location: Dance Loft on 14

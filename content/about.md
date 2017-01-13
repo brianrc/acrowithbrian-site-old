@@ -3,7 +3,7 @@ title: About
 hero: ../assets/about-1920x.jpg
 ---
 
-Hi! I'm Brian. I am a certified Acro Revolution teacher based in Washington, D.C.
+Hi! I'm Brian Cruikshank. I am a certified Acro Revolution teacher based in Washington, D.C.
 
 I've been playing with acro for over 5 years, traveling the country and discovering some of the most advanced techniques and moves. Now I want to teach you!
 

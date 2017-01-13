@@ -197,7 +197,10 @@ section h2 {
 .eventsList {
   flex: 1;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 /*@media (min-width: 768px) {
   .eventsContainer {
     flex-direction: row;

@@ -44,7 +44,7 @@ class Events extends Component {
         </Page>
         <div className={styles.container}>
           <BigCalendar
-            eventPropGetter={event => ({className: 'category-' + event.category.toLowerCase()})}
+            eventPropGetter={event => ({className: ['cat-' + event.category.toLowerCase(), event.teaching ? 'teaching':''] })}
             selectable
             events={events}
             timeslots={1}

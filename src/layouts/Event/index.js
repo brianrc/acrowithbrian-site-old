@@ -34,7 +34,7 @@ const Event = (props) => {
                   <abbr title="2017-01-01"> { end.toString() } </abbr>
                 </dd>
 
-                <dt>Event Category:</dt>
+                <dt>Category:</dt>
                 <dd>
                   { category }
                 </dd>
