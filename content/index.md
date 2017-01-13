@@ -2,10 +2,10 @@
 title: Hi, I'm Brian.
 metaTitle: Acro With Brian
 layout: Homepage
-hero: assets/DSC_5823.jpg
+hero: assets/home-1920x.jpg
 aboutPhoto: assets/DSC_3042-640x.jpg
 aboutPhotoBig: assets/DSC_3042-1080x.jpg
-photoHighlight: assets/DSC_0436.jpg
+photoHighlight: assets/photo-highlight-1920x.jpg
 # hero credit: https://www.flickr.com/photos/pslee999/15589950511/
 #cta:
 #  label: About this theme
