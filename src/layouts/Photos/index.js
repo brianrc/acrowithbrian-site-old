@@ -13,7 +13,7 @@ const Photos = (props) => {
         { ...props }
       >
       </Page>
-      <Gallery images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={400} />
+      <Gallery images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={400} lightboxWidth={1536} />
     </div>
   )
 }
