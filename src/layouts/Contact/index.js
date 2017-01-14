@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 import Page from "../Page"
 import styles from "./index.css"
-
+import './alert.global.css';
 
 class Contact extends Component {
   constructor(props) {
@@ -28,6 +28,12 @@ class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+
+    // check that all fields have values
+    if (this.state.name == '' || this.state.email == '' || this.state.message == '') {
+      this.setState({ alert: { show: true, type: 'danger', text: 'Please fill out all fields.'} })
+      return;
+    }
 
     const json = JSON.stringify({
       Name: this.state.name,
@@ -60,7 +66,8 @@ class Contact extends Component {
       else if (xmlhttp.readyState === 4) {
         // 200 - 299 = successful
         if ( xmlhttp.status === 200 && xmlhttp.status < 300 ) {
-          _this.setState({ alert: { show: true, type: 'success', text: 'Your message has been sent!'} });
+          _this.setState({ alert: { show: true, type: 'success', text: 'Your message has been sent!'},
+                            name: '', email: '', message: '' });
         }
         else {
           _this.setState({ alert: { show: true, type: 'danger', text: 'Sorry, there has been an error. Please send your message to brian@brianswebstudio.com'} });
@@ -88,15 +95,15 @@ class Contact extends Component {
 
             <div className={ styles.formGroup }>
               <label>Name:</label>
-              <input type="text" value={this.state.name} name="name" placeholder="Your name" onChange={this.handleChange.bind(this, 'name')} />
+              <input type="text" value={this.state.name} name="name" placeholder="Your name" onChange={this.handleChange.bind(this, 'name')} required />
             </div>
             <div className={ styles.formGroup }>
               <label>Email:</label>
-              <input type="email" value={this.state.email} name="email" placeholder="Your email" onChange={this.handleChange.bind(this, 'email')} />
+              <input type="email" value={this.state.email} name="email" placeholder="Your email" onChange={this.handleChange.bind(this, 'email')} required />
             </div>
             <div className={ styles.formGroup }>
               <label>Message:</label>
-              <textarea value={this.state.message} name="message" placeholder="Your message" onChange={this.handleChange.bind(this, 'message')} />
+              <textarea value={this.state.message} name="message" placeholder="Your message" onChange={this.handleChange.bind(this, 'message')} required  />
             </div>
             <input type="submit" value="Send" />
           </form>
