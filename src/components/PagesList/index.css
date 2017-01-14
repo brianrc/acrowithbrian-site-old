@@ -6,9 +6,3 @@
   padding: 0;
   flex-wrap: wrap;
 }
-
-@media (min-width: 768px) {
-  .list {
-    justify-content: space-between;
-  }
-}
