@@ -2,11 +2,12 @@
   background-color: #efefef;
 }
 .aboutSection .wrapper, .eventsSection .wrapper {
-  padding: 0 1rem;
+  /*padding: 0 1rem;*/
 }
 .aboutSection .wrapper, .eventsSection .wrapper, .blogSection .wrapper {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  /*padding-top: 3rem;
+  padding-bottom: 3rem;*/
+  padding: 3rem 1rem;
 }
 .wrapper {
   margin: auto;
