@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 
-import LatestPosts from "../../components/LatestPosts"
+//import LatestPosts from "../../components/LatestPosts"
 import Page from "../Page"
 
 import styles from "./index.css"
@@ -30,7 +30,7 @@ const Post = (props) => {
       }
     >
       <hr />
-      <LatestPosts />
+      {/* <LatestPosts /> */}
     </Page>
   )
 }
