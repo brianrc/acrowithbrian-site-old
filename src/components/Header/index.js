@@ -105,14 +105,6 @@ class Header extends Component {
               className={ styles.link }
               to={ "/blog/" }
             >
-              { "Blog" }
-            </Link>
-            </li>
-            <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/events/" }
-            >
               { "Events" }
             </Link>
             </li>
@@ -120,6 +112,14 @@ class Header extends Component {
             <Link
               className={ styles.link }
               to={ "/contact/" }
+            >
+              { "Blog" }
+            </Link>
+            </li>
+            <li className={styles.navItem}>
+            <Link
+              className={ styles.link }
+              to={ "/events/" }
             >
               { "Contact" }
             </Link>
