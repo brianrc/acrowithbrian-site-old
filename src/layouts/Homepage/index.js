@@ -58,7 +58,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
             ? <Loading />
             : <div className={ styles.aboutTextContainer }>
                 <div className={ styles.body }>
-                  <h2>About</h2>
+                  <h2>About Me</h2>
                   <div className={ styles.aboutText }>
                     <BodyContainer>{ body }</BodyContainer>
                   </div>

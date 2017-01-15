@@ -13,6 +13,8 @@ const Footer = () => (
         { "Brian's Web Studio" }
       </a>
       { ". Made with " }
+      <strong>{ "love" }</strong>
+      { " and " }
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
         className={ styles.footerLink }
