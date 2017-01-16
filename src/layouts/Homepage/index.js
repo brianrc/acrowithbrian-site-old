@@ -16,6 +16,8 @@ const Homepage = (props, { metadata: { pkg } }) => {
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
 
   const meta = [
+    { property: "og:locale", content: "en_US" },
+    { property: "og:site_name", content: "Acro with Brian" },
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
     {
@@ -23,6 +25,8 @@ const Homepage = (props, { metadata: { pkg } }) => {
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
     { property: "og:description", content: head.description },
+    { property: "og:image", content: head.hero },
+    { property: "article:publisher", content: "https://www.facebook.com/brianrc" },    
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
     { name: "twitter:creator", content: `@${ pkg.twitter }` },
