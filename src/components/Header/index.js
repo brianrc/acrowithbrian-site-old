@@ -85,44 +85,44 @@ class Header extends Component {
           {/* <div className={ styles.navPart1 }> */}
           <ul className={styles.navItems}>
             <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/about/" }
-            >
-              { "About" }
-            </Link>
+              <Link
+                className={ styles.link }
+                to={ "/about/" }
+              >
+                { "About" }
+              </Link>
             </li>
             <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/photos/" }
-            >
-              { "Photos" }
-            </Link>
+              <Link
+                className={ styles.link }
+                to={ "/photos/" }
+              >
+                { "Photos" }
+              </Link>
             </li>
             <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/blog/" }
-            >
-              { "Events" }
-            </Link>
+              <Link
+                className={ styles.link }
+                to={ "/events/" }
+              >
+                { "Events" }
+              </Link>
             </li>
             <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/contact/" }
-            >
-              { "Blog" }
-            </Link>
+              <Link
+                className={ styles.link }
+                to={ "/blog/" }
+              >
+                { "Blog" }
+              </Link>
             </li>
             <li className={styles.navItem}>
-            <Link
-              className={ styles.link }
-              to={ "/events/" }
-            >
-              { "Contact" }
-            </Link>
+              <Link
+                className={ styles.link }
+                to={ "/contact/" }
+              >
+                { "Contact" }
+              </Link>
             </li>
           </ul>
           {/* </div> */}
