@@ -6,7 +6,7 @@ const pageDate = head.date ? new Date(head.date.replace(/-/g, '\/').replace(/T.+
 
 return (
     <div
-      className={ styles.hero + ' stabilizeVH' }
+      className={ styles.hero }
       style={ head.hero && {
         background: `linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url(${ head.hero }) 50% 50% / cover`,
       } }
