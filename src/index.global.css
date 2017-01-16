@@ -89,14 +89,3 @@ hr {
   opacity: 0.2;
   margin: 2rem 0;
 }
-
-/* fix vh page jump on mobile */
-body::after {
-    content: '';
-    position: fixed;
-    top: -100px;
-    bottom: -100px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
