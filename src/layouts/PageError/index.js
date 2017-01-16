@@ -9,24 +9,26 @@ const PageError = ({ error, errorText }) => (
     head={{
       // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
       hero: "https://farm8.staticflickr.com/7559/16101654539_bee5151340_k.jpg",
+      title: error + " Acro Not Found",
       metaTitle: "Page Not Found"
     }}
   >
     <div className={ styles.container }>
       <div className={ styles.oops }>{ "😱 Oooops!" }</div>
       <div className={ styles.text }>
-        <p className={ styles.title }>
-          <strong>{ error }</strong>
-          { " " }
-          { errorText }
-        </p>
         {
           error === 404 &&
           <div>
-            { "It seems you found a broken link. " }
-            { "Sorry about that. " }
-            <br />
-            { "Do not hesitate to report this page 😁." }
+            <p>
+              { "Sorry about that. It seems you found a broken link." }
+            </p>
+            <p>
+              { "Feel free to " }
+              <a href="/contact/">
+                { "send me a note" }
+              </a>
+              { " so I can fix. Thanks!" }
+            </p>
           </div>
         }
       </div>

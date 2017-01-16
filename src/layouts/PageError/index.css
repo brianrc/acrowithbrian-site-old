@@ -11,11 +11,20 @@
   font-size: 4rem;
   line-height: 4rem;
   color: #ddd;
+  margin-bottom: 2rem;
 }
 
-.title {
-  margin: 4rem 0;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: center;
+.text {
+  & a {
+    color: var(--colorPrimary);
+    transition: all 0.2s;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      opacity: 1;
+      color: color(var(--colorPrimary) l(- 5%));
+      border-bottom-color: var(--colorPrimary);
+    }
+  }
 }
