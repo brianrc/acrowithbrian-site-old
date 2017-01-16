@@ -4,7 +4,7 @@ import Page from "../Page"
 
 import styles from "./index.css"
 
-const PageError = ({ error, errorText }) => (
+const PageError = ({ error }) => (
   <Page
     head={{
       // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
