@@ -14,7 +14,7 @@ const Blog = (props) => {
       >
       </Page>
       <div className={ styles.wrapper }>
-        <LatestPosts numberOfPosts="12" />
+        <LatestPosts numberOfPosts="20" />
       </div>
     </div>
   )
