@@ -53,7 +53,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
             <img src={ head.aboutPhoto }
               srcSet={ head.aboutPhoto + ' 640w, ' + head.aboutPhotoBig + ' 1080w'}
               sizes={'(min-width: 768px) 50vw, 100vw'}
-            alt={ "Brian Cruikshank" } />
+              alt={ "Brian Cruikshank" } />
           </div>
           {
             isLoading
