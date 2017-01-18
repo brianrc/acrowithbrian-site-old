@@ -22,7 +22,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
     { property: "og:description", content: head.description },
-    { property: "og:image", content: head.hero },
+    { property: "og:image", content: joinUri(process.env.PHENOMIC_USER_PATHNAME, __url) + head.hero.split('..').join('') },
     { property: "article:publisher", content: "https://www.facebook.com/brianrc" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
