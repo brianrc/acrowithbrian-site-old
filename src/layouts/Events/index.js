@@ -6,7 +6,6 @@ import styles from "./index.css"
 import BigCalendar from 'react-big-calendar';
 import './react-big-calendar.global.css';
 import moment from 'moment';
-//import events from './events.js';
 
 import enhanceCollection from "phenomic/lib/enhance-collection"
 import {browserHistory} from "phenomic/lib/client"
@@ -17,8 +16,8 @@ class Events extends Component {
     super()
   }
   static contextTypes = {
-      collection: PropTypes.array,
-    };
+    collection: PropTypes.array,
+  };
 
 
   render() {
