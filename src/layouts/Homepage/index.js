@@ -14,7 +14,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
 
   const meta = [
     { property: "og:locale", content: "en_US" },
-    { property: "og:site_name", content: "Acro with Brian" },
+    { property: "og:site_name", content: "Brian Cruikshank Acro" },
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
     {
@@ -22,7 +22,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
     { property: "og:description", content: head.description },
-    { property: "og:image", content: joinUri(process.env.PHENOMIC_USER_URL, head.hero) },
+    { property: "og:image", content: joinUri(process.env.PHENOMIC_USER_URL, head.facebookImage) },
     { property: "article:publisher", content: "https://www.facebook.com/brianrc" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
