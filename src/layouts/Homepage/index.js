@@ -75,7 +75,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       <section className={ styles.photoHighlight }>
         <div className={ styles.panelImage }
           style={ head.photoHighlight && {
-            backgroundImage: `url(${ head.photoHighlight })`,
+            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0) ), url(${ head.photoHighlight })`,
           } }>
           <Link to='photos' className={styles.buttonLink}>
             <Button big light className={ styles.button }>View Photos</Button>
