@@ -7,9 +7,6 @@ import LatestPosts from "../../components/LatestPosts"
 import LatestEvents from "../../components/LatestEvents"
 import styles from "./index.css"
 
-// import Gallery from 'react-grid-gallery'
-// import images from '../../../content/assets/home-gallery/images.js'
-
 const Homepage = (props, { metadata: { pkg } }) => {
   const { isLoading, __url, head, body, footer  } = props;
 
@@ -26,7 +23,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
     },
     { property: "og:description", content: head.description },
     { property: "og:image", content: head.hero },
-    { property: "article:publisher", content: "https://www.facebook.com/brianrc" },    
+    { property: "article:publisher", content: "https://www.facebook.com/brianrc" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
     { name: "twitter:creator", content: `@${ pkg.twitter }` },
@@ -74,6 +71,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
           }
         </div>
       </section>
+
       <section className={ styles.photoHighlight }>
         <div className={ styles.panelImage }
           style={ head.photoHighlight && {
@@ -84,23 +82,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
           </Link>
         </div>
       </section>
-      {/* <section className={ styles.photosSection }>
-        <h2 className={ styles.sectionHeading }>Photos</h2> */}
-          {/* <div className={ styles.photoGrid }>
-            <img src="https://dummyimage.com/400x400/000/fff" />
-            <img src="https://dummyimage.com/400x400/000/fff" />
-            <img src="https://dummyimage.com/400x400/000/fff" />
-            <img src="https://dummyimage.com/400x400/000/fff" />
-          </div> */}
-          {/* <div className={ styles.gallery }>
 
-            <Gallery className={ styles.galleryZ}  images={images} enableImageSelection={false} backdropClosesModal={true} rowHeight={320} />
-
-          </div>
-          <Link to='photos' className={styles.buttonLink}>
-            <Button>More Photos</Button>
-          </Link>
-      </section> */}
       <section className={ styles.eventsSection }>
         <div className={ styles.wrapper }>
           <div className={ styles.body }>
@@ -127,15 +109,6 @@ const Homepage = (props, { metadata: { pkg } }) => {
           </Link>
         </div>
       </section>
-
-      {/* <section className={ styles.contactSection }>
-        <div className={ styles.wrapper }>
-          <h2 className={ styles.sectionHeading }>Contact</h2>
-          <Link to='contact' className={styles.buttonLink}>
-            <Button>Contact me</Button>
-          </Link>
-        </div>
-      </section> */}
 
       <section className={ styles.footerSection }>
         { footer }

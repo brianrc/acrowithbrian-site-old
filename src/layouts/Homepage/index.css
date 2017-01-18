@@ -1,12 +1,7 @@
 .photosSection, .blogSection, .footerSection {
   background-color: #efefef;
 }
-.aboutSection .wrapper, .eventsSection .wrapper {
-  /*padding: 0 1rem;*/
-}
 .aboutSection .wrapper, .eventsSection .wrapper, .blogSection .wrapper {
-  /*padding-top: 3rem;
-  padding-bottom: 3rem;*/
   padding: 6rem 1rem;
 }
 .wrapper {
@@ -21,19 +16,11 @@
 .hero {
   /* fallback, mainly visible when hero image is loading */
   background-color: var(--colorSecondary);
-  /* fallback when there is no hero image */
-  /*background:
-    radial-gradient(
-      ellipse at 50% 50%,
-      color(var(--colorSecondary) l(+ 10%)) 15%,
-      var(--colorSecondary) 70%
-    );*/
-    display: flex;
-    flex-direction: column;
-    padding: 5rem 0;
-    /*padding: 20vh 0;*/
-    height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0;
+  height: 100vh;
+  text-align: center;
 }
 .hero .wrapper {
   margin-left: 10vw;
@@ -129,39 +116,8 @@
 section h2 {
   text-align: center;
 }
-.gallery {
-  /*display: flex;*/
-  /*justify-content: center;*/
-}
-.galleryZ {
-  background-color: 'red';
-}
-.photoGrid {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  height: auto;
-  /*width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;*/
 
- & img {
-   display: flex;
-   flex: 1;
-   height: auto;
-   /*height: auto;
-   width: 25%;
-   margin: 0;
-   padding: 0;*/
- }
-}
-@media (min-width: 900px) {
-  .photoGrid img {
-    /*flex-basis: 25%;*/
-    width: 25%;
-  }
-}
+
 .buttonLink {
   display: block;
   margin-top: 20px;
