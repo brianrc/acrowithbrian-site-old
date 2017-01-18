@@ -1,5 +1,4 @@
 import React, { PropTypes } from "react"
-
 import Page from "../Page"
 
 import styles from "./index.css"
@@ -8,7 +7,7 @@ const PageError = ({ error }) => (
   <Page
     head={{
       // hero credit: https://www.flickr.com/photos/mypubliclands/16101654539/
-      hero: "https://farm8.staticflickr.com/7559/16101654539_bee5151340_k.jpg",
+      hero: "../assets/404-1920x.jpg",
       title: error + " Acro Not Found",
       metaTitle: "Page Not Found"
     }}
@@ -38,7 +37,6 @@ const PageError = ({ error }) => (
 
 PageError.propTypes = {
   error: PropTypes.oneOfType([ PropTypes.number, PropTypes.string ]),
-  errorText: PropTypes.string,
 }
 
 PageError.defaultProps = {
