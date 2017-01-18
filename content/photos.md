@@ -1,6 +1,6 @@
 ---
 title: Photos
-metaTitle: Photos
+metaTitle: Photography
 layout: Photos
 hero: ../assets/photos-1920x.jpg
 ---

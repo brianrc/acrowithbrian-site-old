@@ -71,7 +71,7 @@ class Header extends Component {
             className={ styles.link }
             to={ "/" }
           >
-            { "Acro With Brian" }
+            { "Brian Cruikshank Acro" }
           </Link>
         </div>
 

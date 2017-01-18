@@ -19,7 +19,8 @@ const Page = ({
     footer,
     children,
   },
-  { metadata: { pkg } } ) => {
+//  { metadata: { pkg } }
+ ) => {
 
   warning(
     typeof head.title === "string",
@@ -30,7 +31,7 @@ const Page = ({
 
   const meta = [
     { property: "og:locale", content: "en_US" },
-    { property: "og:site_name", content: "Acro with Brian" },
+    { property: "og:site_name", content: "Brian Cruikshank Acro" },
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
     {
@@ -38,19 +39,19 @@ const Page = ({
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
     { property: "og:description", content: head.description },
-    { property: "og:image", content: head.hero },
+    { property: "og:image", content: joinUri(process.env.PHENOMIC_USER_URL, __url) + head.hero },
     { property: "article:publisher", content: "https://www.facebook.com/brianrc" },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ pkg.twitter }` },
-    { name: "twitter:description", content: head.description },
+    // { name: "twitter:card", content: "summary" },
+    // { name: "twitter:title", content: metaTitle },
+    // { name: "twitter:creator", content: `@${ pkg.twitter }` },
+    // { name: "twitter:description", content: head.description },
     { name: "description", content: head.description },
   ]
 
   return (
     <div className={ styles.page }>
       <Helmet
-        title={ metaTitle + ' - Acro with Brian' }
+        title={ metaTitle + ' - Brian Cruikshank Acro' }
         meta={ meta }
       />
       {
