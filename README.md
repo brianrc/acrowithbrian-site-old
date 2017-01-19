@@ -1,19 +1,14 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+This is my personal acro yoga teacher website.
 
-## Install dependencies
+Made using [Phenomic](https://github.com/MoOx/phenomic), an amazing React static site generator.
 
-```sh
-npm install
-```
+So thankful for the helpful community and the amazing work being done there.
 
-## Run development server
+Other components include:
+* [react-big-calendar](https://github.com/intljusticemission/react-big-calendar)
+* [react-grid-gallery](https://github.com/benhowell/react-grid-gallery)
+* [formspree.io](https://formspree.io/)
 
-```sh
-npm start
-```
+Hosted on [Netlify](https://www.netlify.com/)
 
-## Build for production
-
-```sh
-npm run build
-```
+You can see more of my work at [Brian's Web Stuido](https://www.brianswebstudio.com/)
