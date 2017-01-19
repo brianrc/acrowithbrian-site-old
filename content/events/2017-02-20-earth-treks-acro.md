@@ -21,4 +21,4 @@ This is an all levels class taught by Brian Cruikshank and [Maren Hill](https://
 * Please check in at the front desk so we know you’ve arrived. If you do not check in a minimum of 10 minutes prior to the start of the session, your spot will be released.
 * If all spaces are filled, you may add your name to the wait-list.
 
-[View Earth Trek's calendar](https://www.earthtreksclimbing.com/calendar/crystalcity/)
+[View Earth Treks' calendar](https://www.earthtreksclimbing.com/calendar/crystalcity/)
