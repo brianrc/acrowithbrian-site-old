@@ -5,6 +5,8 @@ import ExtractTextPlugin from "extract-text-webpack-plugin"
 import { phenomicLoader } from "phenomic"
 import PhenomicLoaderFeedWebpackPlugin
   from "phenomic/lib/loader-feed-webpack-plugin"
+import PhenomicLoaderSitemapWebpackPlugin
+  from "phenomic/lib/loader-sitemap-webpack-plugin"
 
 import pkg from "./package.json"
 
@@ -251,6 +253,19 @@ export default (config = {}) => {
               limit: 20,
             },
           },
+        },
+      }),
+
+      new PhenomicLoaderSitemapWebpackPlugin({
+        // This param is mandatory. You must specify your site url.
+        // Here we take the url we specified in the `package.json`
+        site_url: pkg.homepage,
+        // this special key allows to filter the collection
+        collectionOptions: {
+          // For example you can add a front-matter metadata to your `.md` files
+          // We display all urls in sitemap except if front-matter `isInSitemap: false` is defined
+          filter: (c) => typeof(c.isInSitemap) === "undefined" || c.isInSitemap === true,
+          sort: "__url",
         },
       }),
 
