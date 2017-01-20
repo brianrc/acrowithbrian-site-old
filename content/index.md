@@ -11,4 +11,4 @@ photoHighlight: assets/photo-highlight-1920x.jpg
 description: Brian Cruikshank is an Acro Yoga teacher based in Washington, DC area. Check out his classes, workshops, and acro photography here.
 ---
 
-I am a certified Acro Revolution teacher based in Washington, DC. Over the last 5 years, I've traveled around the country training and playing with amazing acrobats and learning some of the most advanced techniques. Now I want to teach you!
+I am a certified Acro Revolution teacher based in Washington, DC. Over the last few years I've traveled the country going to festivals, training, and playing with some of the most advanced acrobats. I've learned quite a bit including some unique tricks and subtle  techniques. Now I want to share that knowledge with you.
