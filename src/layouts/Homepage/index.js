@@ -7,6 +7,9 @@ import LatestPosts from "../../components/LatestPosts"
 import LatestEvents from "../../components/LatestEvents"
 import styles from "./index.css"
 
+import Svg from "react-svg-inline"
+import arrowSvg from "../../components/icons/iconmonstr-arrow-65.svg"
+
 const Homepage = (props, { metadata: { pkg } }) => {
   const { isLoading, __url, head, body, footer  } = props;
 
@@ -45,6 +48,10 @@ const Homepage = (props, { metadata: { pkg } }) => {
       >
         <div className={ styles.wrapper }>
           <h1 className={ styles.heading }>{ head.title }</h1>
+        </div>
+
+        <div className={ styles.arrow }>
+          <Svg svg={ arrowSvg } cleanup />
         </div>
       </section>
       <section className={ styles.aboutSection }>
