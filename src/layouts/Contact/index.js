@@ -51,7 +51,7 @@ class Contact extends Component {
   sendFormData(json) {
     // Send the form data.
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('POST', 'https://formspree.io/brianrc6@gmail.com', true);
+    xmlhttp.open('POST', 'https://formspree.io/brian@acrowithbrian.com', true);
     xmlhttp.setRequestHeader('Accept', 'application/json');
     xmlhttp.setRequestHeader('Content-Type', 'application/json');
 
