@@ -34,6 +34,7 @@
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   color: var(--colorNeutralDark);
+  transition: background-color 0.5s ease;
 }
 
 .scrolled .bar, .scrolled .bar:before, .scrolled .bar:after {
@@ -51,11 +52,6 @@
   padding: 0;
 }
 
-.navPart1,
-.navPart2 {
-  display: flex;
-  flex-direction: row;
-}
 .navItems {
   display: flex;
   flex-direction: row;
@@ -100,18 +96,6 @@
   width: 70px;
   padding: 20px;
 }
-
-/*.ham {
-  position: absolute;
-  top: 15px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}*/
 
 .bar,
 .bar:after,

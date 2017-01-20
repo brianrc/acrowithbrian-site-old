@@ -2,8 +2,8 @@
   "private": true,
   "name": "acro-brian",
   "homepage": "https://www.acrowithbrian.com",
-  "twitter": "",
-  "repository": "",
+  "facebook": "brianrc",
+  "instagram": "briancruikshank",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",

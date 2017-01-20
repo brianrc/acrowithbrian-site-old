@@ -1,12 +1,7 @@
 import React, { PropTypes, Component } from "react"
 import { Link } from "phenomic"
-import Svg from "react-svg-inline"
 
 import handleClickAway from '../../utils/handleClickAway'
-
-import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-import gitHubSvg from "../icons/iconmonstr-github-1.svg"
-
 import styles from "./index.css"
 
 class Header extends Component {
@@ -57,12 +52,9 @@ class Header extends Component {
   }
 
   render() {
-    const { pkg } = this.context.metadata
-//    const { fullWidth } = this.props
     const { sideNavOpen } = this.state
     const mobileNav = (sideNavOpen) ? styles.open : ''
     const openClass = (sideNavOpen) ? styles.animate : ''
-//    const containerStyle = (fullWidth) ? styles.fullWidth : ''
 
     return (
       <header className={ styles.header + (this.state.didScroll ? ' ' + styles.scrolled : '') }>
@@ -82,7 +74,6 @@ class Header extends Component {
         </div>
 
         <nav className={ `${styles.nav} ${mobileNav}` }>
-          {/* <div className={ styles.navPart1 }> */}
           <ul className={styles.navItems}>
             <li className={styles.navItem}>
               <Link
@@ -125,29 +116,6 @@ class Header extends Component {
               </Link>
             </li>
           </ul>
-          {/* </div> */}
-          <div className={ styles.navPart2 }>
-            {
-              pkg.twitter &&
-              <a
-                href={ `https://twitter.com/${pkg.twitter}` }
-                className={ styles.link }
-              >
-                <Svg svg={ twitterSvg } cleanup />
-                { "Twitter" }
-              </a>
-            }
-            {
-              pkg.repository &&
-              <a
-                href={ pkg.repository }
-                className={ styles.link }
-              >
-                <Svg svg={ gitHubSvg } cleanup />
-                { "GitHub" }
-              </a>
-            }
-          </div>
         </nav>
       </header>
     )

@@ -1,5 +1,9 @@
 import React from "react"
 
+import Svg from "react-svg-inline"
+import facebookSvg from "../icons/iconmonstr-facebook-3.svg"
+import instagramSvg from "../icons/iconmonstr-instagram-6.svg"
+
 import styles from "./index.css"
 
 const Footer = () => (
@@ -13,7 +17,7 @@ const Footer = () => (
         { "Brian's Web Studio" }
       </a>
       { ". Made with " }
-      <strong>{ "love" }</strong>
+      <span className={ styles.heart }>{ "♥" }</span>
       { " and " }
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
@@ -22,6 +26,27 @@ const Footer = () => (
         { `<${ process.env.PHENOMIC_NAME} />` }
       </a>
     </p>
+
+    <ul className={ styles.socialLinks }>
+      <li>
+        <a
+          href={ `https://www.facebook.com/brianrc` }
+          className={ styles.link }
+          target="_blank"
+        >
+          <Svg svg={ facebookSvg } cleanup />
+        </a>
+      </li>
+      <li>
+        <a
+          href={ `https://www.instagram.com/briancruikshank` }
+          className={ styles.link }
+          target="_blank"
+        >
+          <Svg svg={ instagramSvg } cleanup />
+        </a>
+      </li>
+    </ul>
   </footer>
 )
 
