@@ -14,6 +14,7 @@ const Footer = () => (
       <a
         href="https://www.brianswebstudio.com/"
         className={ styles.footerLink }
+        target="_blank"
         rel="noopener noreferrer"
       >
         { "Brian's Web Studio" }
@@ -24,6 +25,7 @@ const Footer = () => (
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
         className={ styles.footerLink }
+        target="_blank"
         rel="noopener noreferrer"
       >
         { `<${ process.env.PHENOMIC_NAME} />` }
