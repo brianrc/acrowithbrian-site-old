@@ -7,8 +7,8 @@ const PagePreview = ({ __url, title, thumbnail }) => {
 
   return (
     <div className={ styles.blogItem }>
-      <Link to={ __url } className={ styles.title }>
-        <img src={thumbnail} title=""/>
+      <Link to={ __url } className={ styles.thumbnail }>
+        <img src={thumbnail} title="" height="640" width="480" />
       </Link>
       <Link to={ __url } className={ styles.title }>
         { title }
