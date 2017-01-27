@@ -13,7 +13,9 @@ const Footer = () => (
       { "Website by "}
       <a
         href="https://www.brianswebstudio.com/"
-        className={ styles.footerLink }>
+        className={ styles.footerLink }
+        rel="noopener noreferrer"
+      >
         { "Brian's Web Studio" }
       </a>
       { ". Made with " }
@@ -22,6 +24,7 @@ const Footer = () => (
       <a
         href={ process.env.PHENOMIC_HOMEPAGE }
         className={ styles.footerLink }
+        rel="noopener noreferrer"
       >
         { `<${ process.env.PHENOMIC_NAME} />` }
       </a>
@@ -33,6 +36,7 @@ const Footer = () => (
           href={ `https://www.facebook.com/brianrc` }
           className={ styles.link }
           target="_blank"
+          rel="me noopener noreferrer"
         >
           <Svg svg={ facebookSvg } cleanup />
         </a>
@@ -42,6 +46,7 @@ const Footer = () => (
           href={ `https://www.instagram.com/briancruikshank` }
           className={ styles.link }
           target="_blank"
+          rel="me noopener noreferrer"
         >
           <Svg svg={ instagramSvg } cleanup />
         </a>
