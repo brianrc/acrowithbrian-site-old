@@ -9,7 +9,7 @@
 
 .hero {
   /* fallback, mainly visible when hero image is loading */
-  background-color: var(--colorSecondary);
+  background-color: #999;
   /* fallback when there is no hero image */
   /*background:
     radial-gradient(

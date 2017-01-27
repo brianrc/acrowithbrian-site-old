@@ -43,7 +43,7 @@ const Homepage = (props, { metadata: { pkg } }) => {
       <section
         className={ styles.hero }
         style={ head.hero && {
-          background: `#111 url(${ head.hero }) 50% 30% / cover`,
+          background: `#999 url(${ head.hero }) 50% 30% / cover`,
         } }
       >
         <div className={ styles.wrapper }>

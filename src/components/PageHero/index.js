@@ -9,6 +9,7 @@ return (
       className={ styles.hero }
       style={ head.hero && {
         background: `linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url(${ head.hero }) 50% 50% / cover`,
+        backgroundColor: '#999',
       } }
     >
       <div className={ styles.header }>
