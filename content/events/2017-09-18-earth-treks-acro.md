@@ -1,13 +1,13 @@
 ---
 title: Acro Class at Earth Treks
-route: events/earth-treks-acro-12
-date: 2017-07-03
+route: events/earth-treks-acro-16
+date: 2017-09-18
 layout: Event
 hero: ../../assets/events-1920x.jpg
 category: Class
 teaching: true
-start: July 3, 2017 8:30 PM
-end: July 3, 2017 10:00 PM
+start: September 18, 2017 8:30 PM
+end: September 18, 2017 10:00 PM
 location: Earth Treks Crystal City
 address: 1235 S Clark St, Arlington, VA 22202
 ---

@@ -1,6 +1,6 @@
 ---
 title: Acro Class at Earth Treks
-route: events/earth-treks-acro-14
+route: events/earth-treks-acro-13
 date: 2017-07-17
 layout: Event
 hero: ../../assets/events-1920x.jpg
