@@ -1,20 +1,20 @@
 ---
 title: Acro Class at Earth Treks
-route: events/earth-treks-acro-24
-date: 2018-02-05
+route: events/earth-treks-acro-31
+date: 2018-05-21
 layout: Event
 hero: ../../assets/events-1920x.jpg
 category: Class
 teaching: true
-start: February 5, 2018 8:30 PM
-end: February 5, 2018 10:00 PM
+start: May 21, 2018 8:30 PM
+end: May 21, 2018 10:00 PM
 location: Earth Treks Crystal City
 address: 1235 S Clark St, Arlington, VA 22202
 ---
 
 AcroYoga is a fun and uplifting practice that can be both playful and challenging, plus it compliments your climbing routine. AcroYoga combines the playfulness of partner acrobatics with the mindfulness of yoga, and the creativity of dance. Working in partnership with others, the practice builds trust, communication, connection, flexibility, and strength. No partner or experience necessary.
 
-This is an all levels class taught by Brian Cruikshank and [Elise Foster](http://www.acroyoga.org/teachers/elise-foster "More about Elise").
+This is an all levels class taught by Brian Cruikshank and [Maren Hill](https://marenacroyoga.com/ "Visit Maren's website").
 * Free for members. Non-members must purchase a gym day pass.
 * Space is limited.
 * You have to sign up for yoga on the day of in person or via phone to guarantee a spot.
